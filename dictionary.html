@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Allergies</title>
+	</head>
+	<body style="text-align: center;">
+		<p>
+			What to watch out for when eating out:
+		</p>
+
+    <button onClick="get_allergen_avoid(allergy, cuisine)">
+			<p id="demo">Get allergy warnings!</p>
+		</button>
+
+
+		<!-- Script to create dictionary
+				and add key-value pairs -->
+		<script>
+			function get_allergen_avoid(allergy, cuisine) {
+				var food = {
+					"Gluten": {"Chinese":["chinese gluten fact 1", "chinese gluten fact 2"],
+                     "American":["american gluten fact 1", "american gluten fact 2"],
+          },
+					"Milk": {"Chinese": ["chinese milk fact 1", "chinese milk fact 2"],
+                  "American":["american milk fact 1", "american milk fact 2"],
+          },
+				};
+
+				let to_show = food[allergy][cuisine];
+
+				document.getElementById("demo").innerHTML = to_show;
+			}
+
+
+		</script>
+	</body>
+</html>

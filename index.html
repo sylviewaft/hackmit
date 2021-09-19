@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Equip and Eat</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link href="my-colors.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Header -->
+<nav class="navbar navbar-expand-nd navbar-cdfgcolor bg-cdfgcolor">
+<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="img/logo.png" height="70"></a>
+</nav>
+</div>
+
+<!--- Navigation Strip -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+		<button class="navbar-toggler ml-auto" type ="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class = "navbar-nav ml-auto nav-fill w-100">
+						<li class="nav-item">
+								<a class="nav-link" href="#details"><h2>What We Do</h2></a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#prizes"><h2>Use Equip and Eat</h2></a>
+						</li>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#contact"><h2>Contact Us</h2></a>
+						</li>
+				</ul>
+		</div>
+
+	</div>
+	</nav>
+
+
+<!--- Dropdown trial3 -->
+
+
+<!--- Home -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+</ul>
+<div class="carousel-inner">
+		<div class="carousel-item active">
+				<img src="img/home_page_photo.jpg">
+				<div class="carousel-caption">
+						<h3>Eat Out Confidently and Without Fear Using...</h3>
+						<br/>
+						<h1 class="display-2">Equip and Eat</h1>
+						<br/>
+						<a class="btn btn-outline-light btn-lg" href="#details" role="button">Details</a>
+
+				</div>
+		</div>
+
+</div>
+</div>
+
+
+
+<!--- Details -->
+
+<div id="details" class="container-fluid padding">
+<div class="row welcome text-center">
+		<div class="col-12">
+			<br>
+				<br>
+				<h1 class="display-4">About Equip and Eat<h1>
+		</div>
+		<hr>
+</div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row welcome details">
+		<div class="col-12">
+				<h1 class="lead font-weight-bold">What?</h1>
+				<p class="lead">Equip and Eat provides tailored advice to individuals with medical conditions and allergies. Based on your condition and the cuisine of food you will be eating, Equip and Eat recomends key questions to ask your server, and hidden allergens to watch out for!</p><!-- We even have a partnership with local hospitals and doctor's offices, which allows you to enter your patient ID number and automatically recieve information specifically tailored to your dietary needs.</p-->
+				<br>
+				<h1 class="lead font-weight-bold">Why?</h1>
+				<p class="lead"> When certain foods can cause life threating reactions, it can be extremely scary to eat out at resturants. Equip and Eat aims to educate individuals to give them more confidence to eat out. We created Equip and Eat especially for parents of allergic children and individuals who are new to avoiding certain foods. </p>
+				<br>
+					</li>
+				</ul>
+		</div>
+</div>
+</div>
+
+</div>
+<hr class="my-4">
+</div>
+
+<!--
+
+		<html>
+		    <head>
+		    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		    <script language="javascript" type="text/javascript">
+		    function dynamicdropdown(listindex)
+		    {
+		        switch (listindex)
+		        {
+		        case "manual" :
+		            document.getElementById("status").options[0]=new Option("Select status","");
+		            document.getElementById("status").options[1]=new Option("OPEN","open");
+		            document.getElementById("status").options[2]=new Option("DELIVERED","delivered");
+		            break;
+		        case "online" :
+		            document.getElementById("status").options[0]=new Option("Select status","");
+		            document.getElementById("status").options[1]=new Option("OPEN","open");
+		            document.getElementById("status").options[2]=new Option("DELIVERED","delivered");
+		            document.getElementById("status").options[3]=new Option("SHIPPED","shipped");
+		            break;
+		        }
+		        return true;
+		    }
+		    </script>
+		    </head>
+
+
+		    <title>Dynamic Drop Down List</title>
+		    <body>
+
+				<p>Select Your Medical Conditons or Allergies:</p>
+        <select id="select_allergy" onchange= "getAllergy()">
+	        <option value=""></option>
+					<option value="cd" href="page1.html">Celiac Disease</option>
+					<option value="t2d">Type 2 Diabetes 2</option>
+					<option value="na">Nut Allergy</option>
+					<option value="ma">Milk Allergy</option>
+					<option value="sa">Seafood Allergy</option>
+					<option value="li">Lactose Intolerance</option>
+        </select>
+
+				<input type="text" id="valueAllergen">
+				<input type="text" id="textAllergen">
+
+
+
+				<p>Select the cuisine</p>
+				<select id="select_cuisine" onchange="getCuisine()">
+					<option value=""></option>
+					<option value="Ch" href="page1.html">Chinese</option>
+					<option value="Ko">Korean</option>
+					<option value="Ja">Japanese</option>
+					<option value="In">Indian</option>
+					<option value="Ff">Fast food</option>
+					<option value="Am">American</option>
+					<option value="Me">Mexican</option>
+					<option value="Md">Mediterranean</option>
+					<option value="Ca">Caribbean</option>
+					<option value="Ba">Bakery</option>
+				</select>
+
+				<input type="text" id="valueCuisine">
+				<input type="text" id="textCuisine">
+
+
+
+
+
+				<script type="text/javascript">
+					function getAllergy() {
+						var select = document.getElementById('select_allergy');
+						var option = select.options[select.selectedIndex].text;
+
+						document.getElementById('valueAllergen').value = option.value;
+						document.getElementById('textAllergen').value = option.text;
+
+						let to_show = "allergy test";
+
+						document.getElementById("allergy_test").innerHTML = to_show;
+					}
+					getAllergy();
+				</script>
+
+				<script type="text/text/javascript">
+					function getCuisine() {
+						var select1 = document.getElementById('select_cuisine');
+						var option1 = select1.options[select1.selectedIndex].text;
+
+						document.getElementById('valueCuisine').value = option1.value;
+						document.getElementById('textCuisine').value = option1.text;
+
+						let to_show1 = "cuisine text";
+
+						document.getElementById("cuisine_text").innerHTML = option;
+					}
+					getCuisine();
+				</script>
+
+				<p id="allergy_test"></p>
+				<p id="cuisine_test"></p>
+
+		    </body>
+		</html>
+
+
+
+
+-->
+
+
+
+
+<!--- Prizes Intro -->
+<div id="prizes" class="container-fluid padding">
+<div class="row welcome text-center">
+		<div class="col-12">
+				<h1 class="display-4">Use Equip and Eat<h1>
+		</div>
+		<hr>
+		<div class="col-12">
+				<p class="lead">Select your medical condition or allergy from the drop down menu below:</p>
+		</div>
+</div>
+</div>
+
+<!--- dropdown 3 -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #800020;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<center><div class="dropdown">
+  <button class="dropbtn"><h3>Select Your Medical Conditons or Allergies:</h3></button><center>
+  <div class="dropdown-content">
+    <a href="page1.html">Celiac Disease</a>
+    <a href="page2.html">Type 2 Diabetes</a>
+    <a href="page3.html">Nut Allergy</a>
+		<a href="page4.html">Seafood Allergy</a>
+    <a href="page5.html">Lactose Intolerance</a>
+		<a href="page6.html">Egg Allergy</a>
+  </div>
+</div></c>
+
+<!--/body>
+</html>
+<br><p></p><br><br>
+<p class="lead">If you know your personal identification number given to you by the hospital, <br>
+	just type your ID to get recommended dietary information!</p>
+<style="fontsize:1vw"> </style>
+<br><p></p>
+<form>
+<h2>Patient ID : </h2>
+<input type="text" name="patientID">
+</form-->
+
+<!--
+
+script>
+	const api_url = "https://fhir.hjalagzjve7c.static-test-account.isccloud.io/Patient/1";
+	async function getPatient() {
+	try {
+		let response = await fetch('https://fhir.hjalagzjve7c.static-test-account.isccloud.io/Patient/1', {
+			method: 'get',
+			headers: {
+				'Authorization': 'Basic '+btoa('username:password'),
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+			mode: 'cors',
+			cache: 'default',
+		})
+	}
+
+		let data = await response.json();
+		console.log(data)
+	}
+	getPatient();
+</script-->
+
+
+
+<script>
+
+	var myHeaders = new Headers();
+	myHeaders.append("x-api-key", "oaHzRDxr1G412rEiqOh2Ea9kuiUTh0gc6eAAK3pJ");
+
+	var urlencoded = new URLSearchParams();
+
+	var requestOptions = {
+	  method: 'GET',
+	  headers: myHeaders,
+	  redirect: 'follow'
+	};
+
+	let result = "";
+
+
+	function getData() {
+		fetch("https://fhir.hjalagzjve7c.static-test-account.isccloud.io/Patient/101749", requestOptions)
+		  .then(response => response.text())
+		  .then(result => console.log(result))
+		  .catch(error => console.log('error', error));
+
+		const obj = JSON.parse(toString(response.text()));
+
+		console.log(obj);
+		}
+
+	//document.getElementById("birth").innerHTML = response["birthDay"];
+	//console.log(response["birthDay"]);
+
+
+	getData();
+
+
+
+
+</script>
+
+<!--p>Get a coupon for a free giftcard on your birthday!</p>
+<p id="birth"></p-->
+
+
+
+<!-- output: allergy -->
+
+
+
+<!--- dropdown Previous -->
+<!---
+<div class="dropdown"><center>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Your Medical Conditons or Allergies:
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#page1">Celiac Disease</a>
+    <a class="dropdown-item" href="#">Type 2 Diabetes 2</a>
+    <a class="dropdown-item" href="#">Nut Allergy</a>
+		<a class="dropdown-item" href="#">Milk Allergy</a>
+		<a class="dropdown-item" href="#">Seafood Allergy</a>
+		<a class="dropdown-item" href="#">Lactose Intolerance</a>
+  </div>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select the Cuisine
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Chinese</a>
+    <a class="dropdown-item" href="#">Korean</a>
+    <a class="dropdown-item" href="#">Japanese</a>
+		<a class="dropdown-item" href="#">Indian</a>
+		<a class="dropdown-item" href="#">Italian</a>
+		<a class="dropdown-item" href="#">Fast food</a>
+		<a class="dropdown-item" href="#">American</a>
+		<a class="dropdown-item" href="#">Mexican</a>
+		<a class="dropdown-item" href="#">Mediterranean</a>
+		<a class="dropdown-item" href="#">Caribbean</a>
+		<a class="dropdown-item" href="#">Bakery</a>
+  </div>
+	<button class="dropbtn" type="button" id= "dropbtn" href="page1.html">
+		Search
+	</button>
+</c>
+</div>
+-->
+
+<!--- Scoring Title -->
+<div id="scoring" class="container-fluid padding">
+<div class="row welcome text-center">
+		<div class="col-12">
+				<h1 class="display-4"><h1>
+		</div>
+		<hr>
+		<div class="col-12">
+				<p class="lead"></p>
+		</div>
+</div>
+</div>
+
+
+<!--- Footer -->
+<footer>
+	<div id="contact" class="container-fluid padding">
+	<div class="row text-center justify-content-center">
+			<div class="col-md-4">
+					<hr class="light">
+					<h5>Contact Us</h5>
+					<hr class="light">
+					<p>Any Issues? Contributions? Contact Us Here:</p>
+					<p>help@equip.com</p>
+			</div>
+			<div class="col-12">
+					<hr class="light">
+					<h5>&copy; 2021 Equip and Eat</h5>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
